@@ -24,3 +24,12 @@ def printLinkedList (head: Node = None):
         current = current.next
 
 printLinkedList(a)
+
+# Recursive solution
+def print_Linked_List (head: Node = None):
+    if head is None:
+        return
+    print(head.value)
+    print_Linked_List(head.next)
+
+print_Linked_List(a)
